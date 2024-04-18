@@ -1,0 +1,479 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    box-sizing: border-box;
+    }
+    
+    ul,
+    li,
+    ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+    
+    a {
+    text-decoration: none;
+  color: black;
+    }
+    
+    *{
+    font-family: "Noto Sans KR";
+    }
+    
+    
+    
+    /*main*/
+
+    header {
+    width: 1652px;
+    height: 170px;
+    margin: 0 a ;
+    position: fixed; 
+    top: 50px;
+    left: 50%;
+    z-index: 2;
+    transform:  translate(-58%,-20%);
+    }
+    
+    
+    .search {
+    position: relative;
+    width: 300px;
+    left: 75px;
+    top: 50px;
+    float: right;
+    }
+    
+    .search > a > img {
+      width: 30px;
+      height: 30px;
+      position : absolute;
+    top: 9px;
+    right: 250px;
+    margin: 0;
+    }
+    
+    
+    
+    
+    
+    
+    input {
+    width: 230px;
+    height: 45px;
+    border: 1px solid #666;
+    border-radius: 20px 20px 20px 20px  ;
+    padding: 12px 12px 12px  60px;
+    font-size: 14px;
+    }
+    
+    
+    
+    
+    #logo {
+    width: 70px;
+    height: 63.75px;
+    float: left;
+    margin: 0 auto;
+    position: relative;
+    left: 910px;
+    top: 20px;
+    
+    }
+    
+    #logo> a >img {
+    width: 100%;
+    height: 100%;
+    }
+    
+    #login {
+    width: 360px;
+    height: 30px;
+    float: right;
+    position: relative;
+    left: 313px;
+    top: 8px;
+    color: #000;
+    
+    }
+    
+    #login>ul>li {
+    float: right;
+    width: 60px;
+    font-size: 13px;
+    text-align: center;
+   
+
+    }
+    
+    
+    
+    #review {
+    float: right;
+    width: 295px;
+    height: 30px;
+    float: right;
+    position: relative;
+    top: 95px;
+    left: 670px;
+    }
+    
+    #review>ul>li {
+    float: right;
+    width: 50px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    }
+    
+    
+    header>ul>li {
+    float: right;
+    padding: 5px;
+    margin: 0;
+    }
+    
+    
+    nav {
+    width: 1000px;
+    height: 40px;
+    float: left;
+    margin: 0 auto;
+    position: relative;
+    top: 80px;
+    left: 300px;
+    }
+    
+    
+    
+    
+    .search-bar__input {
+    width: 50px;
+    border: none;
+    text-align: center;
+    margin-left: 10px;
+    overflow: auto;
+    z-index: -1;
+    font-size: 15px;
+    border: 2px slide slateblue;
+    }
+    
+    
+    .search-bar__input:focus {
+    outline: none;
+    width: 300px;
+    text-align: left;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    /*메뉴*/
+    .menu {
+    float: left;
+    width: 650px;
+    margin: 0px 0 0 150px;
+    position: relative;
+    left: 40px;
+    }
+    
+    .menu>li {
+    float: left;
+    width: 20%;
+    text-align: center;
+    transition: all 0.5s ease;
+    line-height: 50px;
+    
+    }
+    
+    .menu>li>a {
+    font-size: 18px;
+    }
+    
+    .menu>li:hover>a {
+    color: black;
+    text-decoration: underline;
+    }
+    
+    .menu>li:hover {
+    color: #fff;
+    }
+    
+    .sub {
+    display: none;
+    z-index: 3;
+    position: relative;
+    width: 1100px;
+    background-color: rgba( 255, 255, 255, 0.5 );
+    line-height: 40px;
+    
+    
+    }
+    
+    
+    
+    .sub>li>a:hover {
+    display: block;
+    width: 100%;
+    font-weight: bold;
+    }
+    
+    .sub > li {
+      display: inline-block;
+      /* [변경] 가로로 펼쳐지도록 설정 */
+      font-size: 15px;
+      padding: 15px;
+     
+    }
+    
+    
+    
+    span:hover {background: rgba(255,255,255,0.8); color:#000;}
+    
+    #wrap {
+    width: 700px; /*1024 X 768 해상도를 맞추어서 설계  971*/ 
+    /*가운데 정렬을 위한 바깥쪽 여백 설정*/
+    margin:0;
+    margin-left : auto;
+    margin-right : auto;
+
+}
+
+h1 { 
+color: rgb(0, 0, 0);
+position: relative;
+top: 350px;
+	
+} /*글색상*/
+
+
+body {
+  padding:1.5em;
+  background: #f5f5f5
+}
+
+table {
+  border: 1px #a39485 solid;
+  font-size: .9em;
+  box-shadow: 0 2px 5px rgba(0,0,0,.25);
+  width: 1500px;
+  border-collapse: collapse;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  top: 400px;
+  left: -400px;
+}
+
+th {
+  text-align: left;
+}
+  
+thead {
+  font-weight: bold;
+  color: #fff;
+  background: #73685d;
+}
+  
+ td, th {
+  padding: 1em .5em;
+  vertical-align: middle;
+}
+  
+ td {
+  border-bottom: 1px solid rgba(0,0,0,.1);
+  background: #fff;
+}
+
+a {
+  color: #73685d;
+}
+  
+ @media all and (max-width: 768px) {
+    
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+  
+  th {
+    text-align: right;
+  }
+  
+  table {
+    position: relative; 
+    padding-bottom: 0;
+    border: none;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+  }
+  
+  thead {
+    float: left;
+    white-space: nowrap;
+  }
+  
+  tbody {
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    white-space: nowrap;
+  }
+  
+  tr {
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  th {
+    border-bottom: 1px solid #a39485;
+  }
+  
+  td {
+    border-bottom: 1px solid #e5e5e5;
+  }
+  
+ }
+ 
+ button{
+	 position: relative;
+top: 450px;
+background-color: rgb(192, 192, 192);
+width: 90px;
+height: 50px;
+margin: 1rem auto;
+ }
+ 
+ 
+ footer {
+    width: 1606px;
+    height: 379.85px;
+    background-color: #ddd;
+    margin: 0 auto;
+    position: relative;
+    top: 700px;
+    }
+    
+    footer > #foot {
+    width: 522px;
+    height: 258.68px;
+    margin: 0 auto;
+    
+    float: left;
+    position: relative;
+    top: 70px;
+    left: 200px;
+    }
+    
+    #foot > p {
+    position: relative;
+    top: 55px;
+    left: -140px;
+    font-size: 13px;
+    }
+    
+    
+    footer > #foot > .footsub{
+    width: 160px;
+    height: 23.6px;
+    margin: 0px;
+    
+    position: relative;
+    left: 20px;
+    top:  20px;
+    float: left;
+    }
+    
+    .footsub > img {
+    width: 100%;
+    height: 100%;
+    }
+    
+    #na {
+    width: 500px;
+    height: 150px;
+    margin: 0 auto;
+    
+    float: left;
+    position: relative;
+    left: 20px;
+    top: 60px;
+    }
+    
+    #na > p {
+    font-size: 12px;
+    text-align: left;
+    }
+    
+    #na1 {
+    width: 100px;
+    height: 120px;
+    margin: 0 auto;
+    
+    float: left;
+    position: relative;
+    left: 550px;
+    top: -175px;
+    }
+    
+    #na1 > p {
+    font-size: 12px;
+    text-align: left;
+    }
+    
+    #na2 {
+    width: 155px;
+    height: 150px;
+    margin: 0 auto;
+    
+    float: left;
+    position: relative;
+    left: 590px;
+    top: -175px;
+    }
+    
+    #na2 > p {
+    font-size: 12px;
+    
+    }
+    
+    
+    #na3 {
+    width: 265px;
+    height: 300px;
+    margin: 0 auto;
+    
+    float: left;
+    position: relative;
+    left: 600px;
+    top: -175px;
+    }
+    
+    #na3 > p {
+    font-size: 12px;
+    }
+    
+    
+    
+    
+    #na5 {
+    width: 30px;
+    height: 30px;
+    margin: 2px;
+    
+    float: left;
+    position: relative;
+    left: 550px;
+    top: -320px;
+    }
+    
+    #na5 > img {
+    width: 100%;
+    height: 100%;
+    }
+ 
+ 

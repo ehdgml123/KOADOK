@@ -1,0 +1,439 @@
+@charset "UTF-8";
+#wrap {
+    width: 700px; /*1024 X 768 해상도를 맞추어서 설계  971*/ 
+    /*가운데 정렬을 위한 바깥쪽 여백 설정*/
+    margin:0;
+    margin-left : auto;
+    margin-right : auto;
+
+}
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    }
+    
+    ul,
+    li,
+    ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+    
+    a {
+    text-decoration: none;
+  color: black;
+    }
+    
+    *{
+    font-family: "Noto Sans KR";
+    }
+    
+    
+    
+    /*main*/
+
+    header {
+    width: 1652px;
+    height: 170px;
+    margin: 0 a ;
+    position: fixed; 
+    top: 50px;
+    left: 50%;
+    z-index: 2;
+    transform:  translate(-58%,-20%);
+    }
+    
+    
+    .search {
+    position: relative;
+    width: 300px;
+    left: 75px;
+    top: 50px;
+    float: right;
+    }
+    
+    .search > a > img {
+      width: 30px;
+      height: 30px;
+      position : absolute;
+    top: 27px;
+    left: 10px;
+    margin: 0;
+    }
+    
+    
+    
+    
+    
+    
+    .input1 {
+    width: 230px;
+    height: 45px;
+    border: 1px solid #666;
+    font-size: 14px;
+    padding: 20px 40px ;
+    border-radius: 20px 20px 20px 20px  ;
+    }
+    
+    
+    
+    
+    #logo {
+    width: 70px;
+    height: 63.75px;
+    float: left;
+    margin: 0 auto;
+    position: relative;
+    left: 910px;
+    top: 20px;
+    
+    }
+    
+    #logo> a >img {
+    width: 100%;
+    height: 100%;
+    }
+    
+    #login {
+    width: 360px;
+    height: 30px;
+    float: right;
+    position: relative;
+    left: 313px;
+    top: 8px;
+    color: #000;
+    
+    }
+    
+    #login>ul>li {
+    float: right;
+    width: 50px;
+    font-size: 12px;
+    text-align: center;
+    margin: 10px;
+
+    }
+    
+    
+    
+    #review {
+    float: right;
+    width: 295px;
+    height: 30px;
+    float: right;
+    position: relative;
+    top: 110px;
+    left: 670px;
+    }
+    
+    #review>ul>li {
+    float: right;
+    width: 50px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    }
+    
+    
+    header>ul>li {
+    float: right;
+    padding: 5px;
+    margin: 0;
+    }
+    
+    
+    nav {
+    width: 1000px;
+    height: 40px;
+    float: left;
+    margin: 0 auto;
+    position: relative;
+    top: 80px;
+    left: 300px;
+    }
+    
+    
+    
+    
+    .search-bar__input {
+    width: 50px;
+    border: none;
+    text-align: center;
+    margin-left: 10px;
+    overflow: auto;
+    z-index: -1;
+    font-size: 15px;
+    border: 2px slide slateblue;
+    }
+    
+    
+    .search-bar__input:focus {
+    outline: none;
+    width: 300px;
+    text-align: left;
+    }
+    
+    /*메뉴*/
+    .menu {
+    float: left;
+    width: 650px;
+    margin: 0px 0 0 150px;
+    position: relative;
+    left: 40px;
+    }
+    
+    .menu>li {
+    float: left;
+    width: 20%;
+    text-align: center;
+    transition: all 0.5s ease;
+    line-height: 50px;
+    
+    }
+    
+    .menu>li>a {
+    font-size: 18px;
+    }
+    
+    .menu>li:hover>a {
+    color: black;
+    text-decoration: underline;
+    }
+    
+    .menu>li:hover {
+    color: #fff;
+    }
+    
+    .sub {
+    display: none;
+    z-index: 3;
+    position: relative;
+    width: 1100px;
+    background-color: rgba( 255, 255, 255, 0.5 );
+    line-height: 40px;
+    
+    
+    }
+    
+    
+    
+    .sub>li>a:hover {
+    display: block;
+    width: 100%;
+    font-weight: bold;
+    }
+    
+    .sub > li {
+      display: inline-block;
+      /* [변경] 가로로 펼쳐지도록 설정 */
+      font-size: 15px;
+      padding: 15px;
+     
+    }
+    
+    
+    
+    span:hover {background: rgba(255,255,255,0.8); color:#000;}
+    
+    
+    .prev {
+      left:0; 
+      border-radius: 0 10px 10px 0px;
+      padding: 0;
+    
+      
+    }
+    
+    .next {
+      right:0; 
+      border-radius: 10px 0px 0px 10px;
+       padding: 0 2px 0 8px;
+      }
+    
+ .login{
+   width: 500px;
+   height: 500px;
+   position: relative;
+   top: 300px;
+   left: 860px;
+   
+ }
+ 
+.login_name_box{   
+height: 35px;
+margin: 0 auto;
+}
+ 
+ .boxTitle{
+	 font-size: 30px;
+	 position: relative;
+	 left: 200px;
+ }
+ 
+input{
+   width: 450px;
+   height: 40px;	 
+   position: relative;
+   top: 20px;
+ }
+
+.sns{
+ width: 187px;
+ height: 33px;
+ position: relative;
+ top: 90px;	
+ left: 50px;
+}
+
+img{
+	width: 100%;
+	height: 100%;
+	
+}
+
+.Area > ul {
+padding: 20px 0 5px;
+position: relative;
+top: 50px;
+}
+    
+.Area > ul > li {
+float: left;
+margin: 10px;
+font-size: 12px;
+position: relative;
+left: 55px;
+}
+
+footer {
+    width: 1606px;
+    height: 379.85px;
+    background-color: #ddd;
+    margin: 0 auto;
+    position: relative;
+    top: 400px;
+    }
+    
+    footer > #foot {
+    width: 522px;
+    height: 258.68px;
+    margin: 0 auto;
+    
+    float: left;
+    position: relative;
+    top: 70px;
+    left: 200px;
+    }
+    
+    #foot > p {
+    position: relative;
+    top: 55px;
+    left: -140px;
+    font-size: 13px;
+    }
+    
+    
+    footer > #foot > .footsub{
+    width: 160px;
+    height: 23.6px;
+    margin: 0px;
+    
+    position: relative;
+    left: 20px;
+    top:  20px;
+    float: left;
+    }
+    
+    .footsub > img {
+    width: 100%;
+    height: 100%;
+    }
+    
+    #na {
+    width: 500px;
+    height: 150px;
+    margin: 0 auto;
+    
+    float: left;
+    position: relative;
+    left: 20px;
+    top: 60px;
+    }
+    
+    #na > p {
+    font-size: 12px;
+    text-align: left;
+    }
+    
+    #na1 {
+    width: 100px;
+    height: 120px;
+    margin: 0 auto;
+    
+    float: left;
+    position: relative;
+    left: 550px;
+    top: -175px;
+    }
+    
+    #na1 > p {
+    font-size: 12px;
+    text-align: left;
+    }
+    
+    #na2 {
+    width: 155px;
+    height: 150px;
+    margin: 0 auto;
+    
+    float: left;
+    position: relative;
+    left: 590px;
+    top: -175px;
+    }
+    
+    #na2 > p {
+    font-size: 12px;
+    
+    }
+    
+    
+    #na3 {
+    width: 265px;
+    height: 300px;
+    margin: 0 auto;
+    
+    float: left;
+    position: relative;
+    left: 600px;
+    top: -175px;
+    }
+    
+    #na3 > p {
+    font-size: 12px;
+    }
+    
+    
+    
+    
+    #na5 {
+    width: 30px;
+    height: 30px;
+    margin: 2px;
+    
+    float: left;
+    position: relative;
+    left: 550px;
+    top: -320px;
+    }
+    
+    #na5 > img {
+    width: 100%;
+    height: 100%;
+    }
+
+

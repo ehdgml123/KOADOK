@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+#wrap {
+    width: 700px; /*1024 X 768 해상도를 맞추어서 설계  971*/ 
+    /*가운데 정렬을 위한 바깥쪽 여백 설정*/
+    margin:0;
+    margin-left : auto;
+    margin-right : auto;
+
+}
+
+h1{
+position: relative;
+top: 400px;	
+}
+
+table {
+  border: 1px #a39485 solid;
+  font-size: .9em;
+  box-shadow: 0 2px 5px rgba(0,0,0,.25);
+  width: 1500px;
+  border-collapse: collapse;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  top: 400px;
+  left: -400px;
+}
+
+th {
+  text-align: left;
+}
+  
+thead {
+  font-weight: bold;
+  color: #fff;
+  background: #73685d;
+}
+  
+ td, th {
+  padding: 1em .5em;
+  vertical-align: middle;
+}
+  
+ td {
+  border-bottom: 1px solid rgba(0,0,0,.1);
+  background: #fff;
+}
+
+a {
+  color: #73685d;
+}
+  
+ @media all and (max-width: 768px) {
+    
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+  
+  th {
+    text-align: right;
+  }
+  
+  table {
+    position: relative; 
+    padding-bottom: 0;
+    border: none;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+  }
+  
+  thead {
+    float: left;
+    white-space: nowrap;
+  }
+  
+  tbody {
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    white-space: nowrap;
+  }
+  
+  tr {
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  th {
+    border-bottom: 1px solid #a39485;
+  }
+  
+  td {
+    border-bottom: 1px solid #e5e5e5;
+  }
+  
+ }
+ 
+ 
+button {
+    position: relative;
+    top: 480px;
+    width: 80px;
+    height: 50px;
+}
+ 
